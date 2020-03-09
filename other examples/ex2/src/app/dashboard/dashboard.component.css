@@ -1,0 +1,22 @@
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    height: 100%;
+}
+.dashboard-navigation {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.dashboard-navigation > div {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.dashboard-navigation > div:hover {
+    color: #fff !important;
+    background: #000;
+}

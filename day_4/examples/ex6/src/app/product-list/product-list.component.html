@@ -1,0 +1,13 @@
+<div>
+    <div *ngFor="let product of products">
+        {{product.productName}}
+        <button (click)="displayProductDetails($event, product)">Details</button>
+    </div>
+</div>
+<app-modal-dialog 
+    *ngIf="isModalDisplayed"
+    [selectedProduct]="selectedProduct"
+    (toggleModalDialog)="onModalDialogClosed($event)">
+    <app-product-details #myContent [selectedProduct]="selectedProduct"></app-product-details>
+</app-modal-dialog>
+<app-product-details #myView [selectedProduct]="selectedProduct"></app-product-details>

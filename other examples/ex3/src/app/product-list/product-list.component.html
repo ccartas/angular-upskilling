@@ -1,0 +1,9 @@
+<div>
+    <div *ngFor="let product of products">
+        {{product.productName}} 
+        <button (click)="showProductDetails($event, product)">Show details</button>
+    </div>
+<app-centered-modal (modalClosed)="onModalClosed($event)" *ngIf="displayProductDetails">
+    <app-product-details [selectedProduct]="data"></app-product-details>
+</app-centered-modal>
+</div>

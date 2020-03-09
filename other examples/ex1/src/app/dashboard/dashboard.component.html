@@ -1,0 +1,13 @@
+<div class="dashboard-container">
+    <div class="dashboard-navigation">
+        <h1 [ngStyle]="userData.authorization === 'ADMIN' ? {'color': 'red'} : {'color' : 'blue'}">Welcome {{userData.name}}</h1>
+        <div>Dashboard</div>
+        <div>Products</div>
+        <div *ngIf="userData.authorization === 'ADMIN'">Management</div>
+    </div>
+    <div id="dashboard-content">
+        <div *ngFor="let product of products">
+            <h1>{{product.name}}</h1>
+        </div>
+    </div>
+</div>

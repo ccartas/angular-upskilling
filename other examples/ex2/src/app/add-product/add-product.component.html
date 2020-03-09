@@ -1,0 +1,11 @@
+<div>
+    <h1>Add Product</h1>
+    <input type="text" placeholder="Product Name" (change)="handleInputChange($event, 'productName')"/>
+    <select (change)="handleInputChange($event, 'category')">
+        <option>SMARTPHONE</option>
+        <option>LAPTOP</option>
+        <option>PC</option>
+    </select>
+    <input type="number" placeholder="Product Price" (change)="handleInputChange($event, 'price')"/>
+    <button (click)="addProduct($event)">Add</button>
+</div>

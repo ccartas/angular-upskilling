@@ -1,0 +1,9 @@
+<div class="product-item-container">
+    <h1>{{product.productName}}</h1>
+    <img [src]="product.imageSource" [alt]="product.productName" />
+    <h4 *ngIf="!product.isOnSale;else discountPrice">Price: {{product.price}}</h4>
+    <ng-template #discountPrice>
+        <h4>Price:: {{product.newPrice}}</h4>
+    </ng-template>
+    <button>Add to cart</button>
+</div>

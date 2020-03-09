@@ -1,0 +1,18 @@
+.product-item-container {
+    display: grid;
+    grid-gap: 10px;
+    border: 2px solid #000;
+    padding: 15px;
+}
+.product-item-container > img {
+    width: 150px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+.product-item-container > button {
+    width: 50%;
+    margin: 0 auto;
+}

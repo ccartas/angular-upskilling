@@ -1,0 +1,7 @@
+<div class="login-container">
+    <h1>{{title}}</h1>
+    <img [src]="logoSource" alt="LoginLogo" />
+    <input type="text" placeholder="Username" (change)="handleInputChange($event, 'username')"/>
+    <input type="password" placeholder="Password" (change)="handleInputChange($event, 'password')"/>
+    <button (click)="handleLogin($event)">Login</button>
+</div>
