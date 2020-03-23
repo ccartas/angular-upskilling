@@ -7,7 +7,6 @@ import { Observable } from 'rxjs';
 export class AppService {
   private count: number = 0;
   private products = [];
-  private Subs
   constructor() { }
 
   increaseCount() {

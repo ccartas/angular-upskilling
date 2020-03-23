@@ -1,0 +1,6 @@
+<div>
+    <a [routerLink]="['/home', {outlets: {home_outlet: 'landing'}}]">Landing</a>
+    <a [routerLink]="['/home', {outlets: {home_outlet: 'contact'}}]">Contact</a>
+    <a [routerLink]="['/home', {outlets: {home_outlet: 'about'}}]">About</a>
+</div>
+<router-outlet name="home_outlet"></router-outlet>

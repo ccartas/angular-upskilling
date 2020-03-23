@@ -1,0 +1,25 @@
+<div>
+    <h1>Register Form</h1>
+    <form class="register-form" [formGroup]="registerForm" (ngSubmit)="onRegisterSubmitted($event)">
+        <input type="text" placeholder="First Name" formControlName="FIRST_NAME"/>
+        <input type="text" placeholder="Last Name" formControlName="LAST_NAME"/>
+        <input type="text" placeholder="Email" formControlName="EMAIL"/>
+        <input type="password" placeholder="Password" formControlName="PASSWORD"/>
+        <input type="password" placeholder="Confirm Password" formControlName="CONFIRM_PASSWORD"/>
+        <input type="text" placeholder="Company" formControlName="COMPANY_NAME"/>
+        <select formControlName="POSITION">
+            <option disabled selected>Position</option>
+            <option>Developer</option>
+            <option>Business Analyst</option>
+            <option>Team Lead</option>
+            <option>Manager</option>
+            <option>QA</option>
+            <option>System Engineer</option>
+        </select>
+        <div>
+            <input type="checkbox" formControlName="AGREEMENT"/> <span>Agree with Terms and Conditions</span>
+        </div>
+        <button type="submit">Register</button>
+        <button type="button">Return</button>
+    </form>
+</div>

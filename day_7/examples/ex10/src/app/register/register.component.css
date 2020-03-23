@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+}
+.register-form {
+    display: grid;
+    gap: 5px;
+}
+.register-form > * {
+    width: 50%;
+    margin: 0 auto;
+}
+.register-form > button {
+    width: 25%;
+}

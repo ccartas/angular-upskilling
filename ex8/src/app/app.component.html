@@ -1,0 +1,7 @@
+<input type="text" 
+  [(ngModel)]="test" 
+  #name="ngModel" 
+  (ngModelChange)="onModelChange($event, name)" 
+  minlength="3"
+  appForbiddenInput="damn"
+/>
