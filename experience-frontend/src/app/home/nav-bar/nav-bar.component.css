@@ -1,0 +1,29 @@
+.app-logo {
+    width: 150px;
+    margin-left: 10px;
+}
+
+.nav-bar-container {
+    display: flex;
+}
+
+.nav-items {
+    margin-left: auto;
+    display: flex;
+}
+
+.nav-item {
+    border: none;
+    margin: 30px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    width: 100px;
+}
+.login {
+    background: #271f6e;
+    color: #FFFFFF;
+    border-radius: 20px;
+}

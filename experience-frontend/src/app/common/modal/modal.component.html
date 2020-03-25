@@ -1,0 +1,18 @@
+<div class="modal-container">
+    <div class="modal-header">
+        <button (click)="goToFirstView($event)">Login</button>
+        <button (click)="goToSecondView($event)">Register</button>
+    </div>
+    <div class="modal-content">
+        <div class="view first" #firstView>
+            <ng-content select="[slot=first]"></ng-content>
+        </div>
+        <div class="view second" #secondView>
+            <ng-content select="[slot=second]"></ng-content>
+        </div>
+    </div>
+    <div class="modal-footer">
+
+    </div>
+</div>
+<div class="overlay"></div>

@@ -1,0 +1,10 @@
+<div class="nav-bar-container">
+    <img src="./assets/imgs/logo.png" class="app-logo">
+    <div class="nav-items">
+        <button class="nav-item" 
+            *ngFor="let navigationEntry of navigationConfiguration;let i = index"
+            [ngStyle]="applyStyleForSelectedNavItem(navigationEntry.selected)"
+            (click)="navigateTo($event, navigationEntry.navigationPath, i)">{{navigationEntry.label}}</button>
+        <button class="nav-item login">Login</button>
+    </div>
+</div>

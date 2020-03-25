@@ -1,0 +1,10 @@
+<div>
+    <app-nav-bar></app-nav-bar>
+    <div>
+        <router-outlet name="home_outlet"></router-outlet>
+    </div>
+    <app-modal>
+        <app-landing-page slot="first"></app-landing-page>
+        <app-about slot="second"></app-about>
+    </app-modal>
+</div>
