@@ -1,0 +1,11 @@
+.notification-container {
+    position: fixed;
+    top: 10px;
+    right: -300px;
+    width: 300px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 0.1fr auto 0.1fr;
+    transition: right 0.3s linear;
+    text-align: center;
+}
