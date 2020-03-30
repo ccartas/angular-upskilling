@@ -40,6 +40,8 @@
         - [RxJS Operators Part I](https://codeburst.io/rx-js-operators-part-i-8d7a76218059)
         - [RxJS Operators Part II](https://medium.com/angular-in-depth/rx-js-operators-part-ii-673e62813cee)
         - [The Best Way to Unsubscribe RxJS Observables](https://medium.com/angular-in-depth/the-best-way-to-unsubscribe-rxjs-observable-in-the-angular-applications-d8f9aa42f6a0)
+- Other courses:
+    [Javascript: Understand The Weird Parts](https://www.udemy.com/course/understand-javascript/)
 - Conferences:
     - [Ng Conf](https://www.youtube.com/user/ngconfvideos/videos)
     - [AngularConnect](https://www.youtube.com/channel/UCzrskTiT_ObAk3xBkVxMz5g/videos)
