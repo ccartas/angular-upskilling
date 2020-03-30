@@ -13,6 +13,7 @@ import { RegisterComponent } from './home/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NotificationComponent } from './common/notification/notification.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddExperienceComponent } from './home/add-experience/add-experience.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     ModalComponent,
     LoginComponent,
     RegisterComponent,
-    NotificationComponent
+    NotificationComponent,
+    AddExperienceComponent
   ],
   imports: [
     BrowserModule,

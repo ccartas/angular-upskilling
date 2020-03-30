@@ -10,3 +10,11 @@ export interface User {
     username: string;
     password: string;
 }
+
+export interface UserData {
+    user_id: string;
+    firstName: string;
+    lastName: string;
+    username: string;
+    token: string;
+}

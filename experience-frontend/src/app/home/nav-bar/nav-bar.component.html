@@ -5,6 +5,8 @@
             *ngFor="let navigationEntry of navigationConfiguration;let i = index"
             [ngStyle]="applyStyleForSelectedNavItem(navigationEntry.selected)"
             (click)="navigateTo($event, navigationEntry.navigationPath, i)">{{navigationEntry.label}}</button>
-        <button class="nav-item login">Login</button>
+        <button class="nav-item" *ngIf="userData">Profile</button>
+        <button class="nav-item login" (click)="displayUserModalDialog($event)" *ngIf="!userData">Login</button>
+        <button class="nav-item login" (click)="logoutUser($event)" *ngIf="userData">Logout</button>
     </div>
 </div>
